@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Studio — Project Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Ambient background blobs -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- ─── HEADER ─── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="var(--claude-orange)"/>
+            <path d="M8 22L16 10L24 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 18H21" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Jarvis Studio</span>
+          <span class="brand-sub">by Tukaram Hankare</span>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+        <button class="filter-btn" data-filter="farm">Farm</button>
+        <button class="filter-btn" data-filter="edu">Edu &amp; Fin</button>
+      </nav>
+
+      <div class="header-right">
+        <span class="project-count"><span id="visible-count">7</span> Projects</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Farmer · Coder · Web Developer
+    </div>
+    <h1 class="hero-title">
+      Built with <em>purpose</em>,<br/>shipped with <span class="highlight">craft</span>.
+    </h1>
+    <p class="hero-desc">
+      A collection of tools, trackers, and platforms — designed for the real world, especially for Indian farming communities and beyond.
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">7</span><span class="stat-label">Live Projects</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client-Side</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Offline Ready</span></div>
+    </div>
+  </section>
+
+  <!-- ─── GRID ─── -->
+  <main class="projects-section">
+    <div class="grid" id="projectGrid">
+
+      <!-- ForgeHub -->
+      <article class="card card--featured" data-category="tool" data-index="0">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-tool-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-tool-color)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--tool">Tool</span>
+            <span class="tag tag--featured">Featured</span>
+          </div>
+        </div>
+        <h2 class="card-title">ForgeHub</h2>
+        <p class="card-desc">Transform your .html source files into GitHub-ready repository structures. Compile, compress, and deploy — without touching the terminal.</p>
+        <div class="card-tech">
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">GitHub</span>
+          <span class="tech-pill">Compiler</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://forgehublive.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- Backpack Emulator -->
+      <article class="card" data-category="tool" data-index="1">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-tool-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-tool-color)" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--tool">Tool</span>
+          </div>
+        </div>
+        <h2 class="card-title">Backpack Emulator</h2>
+        <p class="card-desc">A browser-based file manager and site emulator with virtual filesystem, multi-user auth, live HTML preview, and APK packaging support.</p>
+        <div class="card-tech">
+          <span class="tech-pill">PWA</span>
+          <span class="tech-pill">IndexedDB</span>
+          <span class="tech-pill">WebRTC</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://backpackemulator.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- Markdown Premium -->
+      <article class="card" data-category="tool" data-index="2">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-edu-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-edu-color)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--edu">Editor</span>
+          </div>
+        </div>
+        <h2 class="card-title">Markdown Premium</h2>
+        <p class="card-desc">A premium markdown editor with live preview, syntax highlighting, export to PDF/HTML, and a clean writing-first experience for developers and writers.</p>
+        <div class="card-tech">
+          <span class="tech-pill">Markdown</span>
+          <span class="tech-pill">Editor</span>
+          <span class="tech-pill">Export</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://markdownpremium.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- KisaanBill -->
+      <article class="card card--farm" data-category="farm" data-index="3">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-farm-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-farm-color)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8l-2 4h12l-2-4z"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--farm">Farm</span>
+          </div>
+        </div>
+        <h2 class="card-title">KisaanBill</h2>
+        <p class="card-desc">Professional tractor rental invoice builder for Indian farmers. Multi-format exports (PDF, XLSX, DOCX, CSV), preset manager, and four themes — fully offline.</p>
+        <div class="card-tech">
+          <span class="tech-pill">PDF</span>
+          <span class="tech-pill">Invoice</span>
+          <span class="tech-pill">Offline</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://kisaanbill.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- KisaanBook -->
+      <article class="card card--farm" data-category="farm" data-index="4">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-farm-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-farm-color)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--farm">Farm</span>
+          </div>
+        </div>
+        <h2 class="card-title">KisaanBook</h2>
+        <p class="card-desc">Farm budget and crop lifecycle tracker with XLSX export, Chart.js dashboards, and offline APK packaging — built for real field use in rural India.</p>
+        <div class="card-tech">
+          <span class="tech-pill">Chart.js</span>
+          <span class="tech-pill">XLSX</span>
+          <span class="tech-pill">APK</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://kisaanbook.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- CryptoPadel -->
+      <article class="card" data-category="edu" data-index="5">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-fin-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-fin-color)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--fin">Finance</span>
+          </div>
+        </div>
+        <h2 class="card-title">CryptoPadel Elite</h2>
+        <p class="card-desc">A crypto-meets-sport platform blending digital asset tracking with padel sports analytics. Clean dashboards, live data views, and a sharp financial-sport aesthetic.</p>
+        <div class="card-tech">
+          <span class="tech-pill">Crypto</span>
+          <span class="tech-pill">Sports</span>
+          <span class="tech-pill">Dashboard</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://cryptopadelite.wordpress.com/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+      <!-- EduTrack -->
+      <article class="card" data-category="edu" data-index="6">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-icon" style="background: var(--tag-edu-bg);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--tag-edu-color)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="card-meta">
+            <span class="tag tag--edu">Education</span>
+          </div>
+        </div>
+        <h2 class="card-title">EduTrack</h2>
+        <p class="card-desc">Student progress and learning tracker — monitor habits, assignments, and performance metrics in one clean, offline-ready interface built for learners.</p>
+        <div class="card-tech">
+          <span class="tech-pill">Tracker</span>
+          <span class="tech-pill">Students</span>
+          <span class="tech-pill">PWA</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://edutrack.carrd.co/" target="_blank" rel="noopener" class="card-link">
+            Visit Project
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <div class="card-shine"></div>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>No projects in this category yet.</p>
+    </div>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-mark small">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="var(--claude-orange)"/>
+            <path d="M8 22L16 10L24 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 18H21" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="footer-name">Tukaram Hankare</p>
+          <p class="footer-role">Farmer · Coder · Web Developer / Designer</p>
+        </div>
+      </div>
+      <p class="footer-location">📍 Solapur, Maharashtra, India · M.Sc. · Solapur University</p>
+      <p class="footer-copy">© 2026 Jarvis Studio. Built with purpose, shipped with craft.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
